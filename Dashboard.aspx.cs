@@ -27,6 +27,8 @@ namespace RememberMeCheckboxAsp
             if (Session["username"] != null)
             {
                 //(Session["username"] = null);
+                //when user press logout button session will be abandoned
+                //changes occur
                 Session.Abandon();
                 Response.Redirect("Login.aspx");
             }
